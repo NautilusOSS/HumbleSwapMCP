@@ -1,11 +1,12 @@
 {
   "name": "humble-swap-mcp",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "type": "module",
   "description": "MCP server for the Humble Swap DEX on Voi",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "node --test test/*.test.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
