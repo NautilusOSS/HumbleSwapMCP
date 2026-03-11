@@ -1,0 +1,144 @@
+{
+  "name": "HumbleSwapPool",
+  "desc": "Humble Swap Pool (swap200)",
+  "methods": [
+    {
+      "name": "custom",
+      "args": [],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "Info",
+      "args": [],
+      "returns": {
+        "type": "((uint256,uint256),(uint256,uint256),(uint256,uint256,uint256,address,byte),(uint256,uint256),uint64,uint64)"
+      }
+    },
+    {
+      "name": "Provider_depositA",
+      "args": [{ "type": "uint256" }],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "Provider_depositB",
+      "args": [{ "type": "uint256" }],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "Provider_deposit",
+      "args": [
+        { "type": "byte" },
+        { "type": "(uint256,uint256)" },
+        { "type": "uint256" }
+      ],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "Provider_withdraw",
+      "args": [
+        { "type": "byte" },
+        { "type": "uint256" },
+        { "type": "(uint256,uint256)" }
+      ],
+      "returns": { "type": "(uint256,uint256)" }
+    },
+    {
+      "name": "Provider_withdrawA",
+      "args": [{ "type": "uint256" }],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "Provider_withdrawB",
+      "args": [{ "type": "uint256" }],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "Trader_swapAForB",
+      "args": [
+        { "type": "byte", "name": "selector" },
+        { "type": "uint256", "name": "amountIn" },
+        { "type": "uint256", "name": "minAmountOut" }
+      ],
+      "returns": { "type": "(uint256,uint256)" }
+    },
+    {
+      "name": "Trader_swapBForA",
+      "args": [
+        { "type": "byte", "name": "selector" },
+        { "type": "uint256", "name": "amountIn" },
+        { "type": "uint256", "name": "minAmountOut" }
+      ],
+      "returns": { "type": "(uint256,uint256)" }
+    },
+    {
+      "name": "Trader_exactSwapAForB",
+      "args": [
+        { "type": "byte", "name": "selector" },
+        { "type": "uint256", "name": "maxAmountIn" },
+        { "type": "uint256", "name": "exactAmountOut" }
+      ],
+      "returns": { "type": "(uint256,uint256)" }
+    },
+    {
+      "name": "Trader_exactSwapBForA",
+      "args": [
+        { "type": "byte", "name": "selector" },
+        { "type": "uint256", "name": "maxAmountIn" },
+        { "type": "uint256", "name": "exactAmountOut" }
+      ],
+      "returns": { "type": "(uint256,uint256)" }
+    },
+    {
+      "name": "arc200_approve",
+      "args": [
+        { "type": "address", "name": "spender" },
+        { "type": "uint256", "name": "value" }
+      ],
+      "returns": { "type": "bool" }
+    },
+    {
+      "name": "arc200_balanceOf",
+      "args": [
+        { "type": "address", "name": "owner" }
+      ],
+      "returns": { "type": "uint256" }
+    },
+    {
+      "name": "arc200_transfer",
+      "args": [
+        { "type": "address", "name": "to" },
+        { "type": "uint256", "name": "value" }
+      ],
+      "returns": { "type": "bool" }
+    },
+    {
+      "name": "createBalanceBox",
+      "args": [{ "type": "address" }],
+      "returns": { "type": "byte" }
+    },
+    {
+      "name": "createBalanceBoxes",
+      "args": [{ "type": "address" }],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "createAllowanceBox",
+      "args": [
+        { "type": "address" },
+        { "type": "address" }
+      ],
+      "returns": { "type": "void" }
+    },
+    {
+      "name": "hasBalance",
+      "args": [{ "type": "address" }],
+      "returns": { "type": "byte" }
+    },
+    {
+      "name": "reserve",
+      "args": [{ "type": "address" }],
+      "returns": { "type": "(uint256,uint256)" }
+    }
+  ],
+  "events": []
+}

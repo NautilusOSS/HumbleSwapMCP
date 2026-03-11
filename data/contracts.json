@@ -1,0 +1,15 @@
+{
+  "voi": {
+    "networkId": "voi-mainnet",
+    "algodUrl": "https://mainnet-api.voi.nodely.dev",
+    "algodPort": 443,
+    "algodToken": "",
+    "indexerUrl": "https://mainnet-idx.voi.nodely.dev",
+    "nativeCurrency": "VOI",
+    "wrapTokenId": 390001,
+    "apiUrl": "https://humble-api.voi.nautilus.sh",
+    "tickerUrl": "https://api.humble.sh/integrations/coingecko/tickers",
+    "defaultPoolId": 395553,
+    "triRouter": 390011
+  }
+}
