@@ -1,6 +1,6 @@
 {
   "name": "HumbleSwapPool",
-  "desc": "Humble Swap Pool (swap200)",
+  "desc": "Humble Swap Pool (swap200) — see https://github.com/HumbleOSS/humble-core/blob/main/index.rsh",
   "methods": [
     {
       "name": "custom",

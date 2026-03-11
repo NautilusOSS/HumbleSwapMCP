@@ -164,6 +164,26 @@ test/
   pools.test.js       Unit tests for pool helpers
 ```
 
+## References
+
+| Resource | URL |
+|----------|-----|
+| Pool contract (Reach) | https://github.com/HumbleOSS/humble-core/blob/main/index.rsh |
+| Humble interface (swap UI) | https://github.com/HumbleOSS/humble-interface/blob/beta/src/components/Swap/index.tsx |
+| ulujs swap utility | https://github.com/temptemp3/ulujs/blob/main/utils/swap.js |
+| ulujs SDK | https://github.com/temptemp3/ulujs |
+
+### Contract notes
+
+The swap200 pool contract uses a `simulate` boolean (first byte arg) on all mutating APIs:
+
+- **`simulate=true` (1):** Computes the result but does NOT execute token transfers or update pool state. Used for quoting.
+- **`simulate=false` (0):** Executes the actual swap — transfers tokens via `arc200_transferFrom`/`arc200_transfer` and updates pool balances.
+
+Transaction builders must use `0` (execute) when constructing the actual transaction group, and `1` (simulate) only for read-only quote simulation.
+
+The `Info` view struct returns `tokB` before `tokA` — the on-chain token ordering may differ from API listings, so builders always call `Info()` to determine the correct swap direction.
+
 ## Pool Contract ABI
 
 The swap200 pool contract exposes:

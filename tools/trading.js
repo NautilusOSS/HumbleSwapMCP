@@ -8,7 +8,7 @@ import {
   fetchSwapRoute,
 } from "../lib/api.js";
 import { DEFAULT_CHAIN } from "../lib/client.js";
-import { jsonContent } from "../lib/utils.js";
+import { jsonContent, decodeTxnSummary } from "../lib/utils.js";
 
 export function registerTradingTools(server) {
   // --- Protocol ---
@@ -99,6 +99,7 @@ export function registerTradingTools(server) {
     },
     async ({ fromToken, toToken, amount, sender, slippage }) => {
       const result = await prepareSwap(DEFAULT_CHAIN, fromToken, toToken, amount, sender, slippage);
+      result.txnGroup = decodeTxnSummary(result.transactions);
       return jsonContent(result);
     }
   );

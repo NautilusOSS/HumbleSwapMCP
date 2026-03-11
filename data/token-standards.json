@@ -1,0 +1,38 @@
+{
+  "voi": {
+    "390001":  { "standard": "network", "assetId": 0, "symbol": "VOI" },
+    "770561":  { "standard": "network", "assetId": 0, "symbol": "FV" },
+    "8324600": { "standard": "network", "assetId": 0, "symbol": "NV" },
+    "828295":  { "standard": "network", "assetId": 0, "symbol": "EV" },
+    "8471125": { "standard": "network", "assetId": 0, "symbol": "bVOI" },
+
+    "395614":  { "standard": "asa", "assetId": 302190, "symbol": "aUSDC" },
+    "413153":  { "standard": "asa", "assetId": 302189, "symbol": "aALGO" },
+    "40153308": { "standard": "asa", "assetId": 302193, "symbol": "aETH" },
+    "40153368": { "standard": "asa", "assetId": 40152643, "symbol": "aBTC" },
+    "40153415": { "standard": "asa", "assetId": 40152648, "symbol": "acbBTC" },
+    "40153155": { "standard": "asa", "assetId": 40152679, "symbol": "POW" },
+
+    "420069":  { "standard": "arc200", "symbol": "UNIT" },
+    "410811":  { "standard": "arc200", "symbol": "NODE", "approvalBuffer": 1.15 },
+    "419744":  { "standard": "arc200", "symbol": "BUIDL" },
+    "410111":  { "standard": "arc200", "symbol": "SHELLY" },
+    "798968":  { "standard": "arc200", "symbol": "AMMO" },
+    "300279":  { "standard": "arc200", "symbol": "GM" },
+    "412682":  { "standard": "arc200", "symbol": "CORN" },
+    "302222":  { "standard": "arc200", "symbol": "F" },
+    "420024":  { "standard": "arc200", "symbol": "IAT" },
+    "47138068": { "standard": "arc200", "symbol": "WAD" },
+    "401384":  { "standard": "arc200", "symbol": "ROCKET" },
+    "404004":  { "standard": "arc200", "symbol": "cool" },
+    "419714":  { "standard": "arc200", "symbol": "PXD" },
+    "419674":  { "standard": "arc200", "symbol": "GSTASH" },
+    "799127":  { "standard": "arc200", "symbol": "IV" },
+    "411311":  { "standard": "arc200", "symbol": "GROOVE" },
+    "416000":  { "standard": "arc200", "symbol": "VBUX" },
+    "420049":  { "standard": "arc200", "symbol": "FLCH" },
+    "410419":  { "standard": "arc200", "symbol": "PIX" },
+    "419000":  { "standard": "arc200", "symbol": "CTYT" },
+    "419385":  { "standard": "arc200", "symbol": "FREN" }
+  }
+}
