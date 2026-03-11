@@ -4,6 +4,7 @@ import { registerPoolTools } from "./tools/pools.js";
 import { registerTokenTools } from "./tools/tokens.js";
 import { registerPriceTools } from "./tools/prices.js";
 import { registerTradingTools } from "./tools/trading.js";
+import { registerWrappingTools } from "./tools/wrapping.js";
 
 const server = new McpServer({
   name: "humble-swap-mcp",
@@ -14,6 +15,7 @@ registerPoolTools(server);
 registerTokenTools(server);
 registerPriceTools(server);
 registerTradingTools(server);
+registerWrappingTools(server);
 
 const transport = new StdioServerTransport();
 await server.connect(transport);
